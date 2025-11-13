@@ -2,6 +2,8 @@
 
 A modern and elegant personal portfolio website built using **Next.js**, designed to showcase my skills, projects, and contact information in a clean, responsive, and animated layout.
 
+🌐 **Live Demo:** [anzar-portfolio.vercel.app](https://anzar-portfolio.vercel.app)
+
 ---
 
 ## 🚀 Tech Stack
