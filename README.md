@@ -78,8 +78,7 @@ Remember to add the environment variable in Vercel project settings.
 
 ## 📬 Contact
 
-- **GitHub**: [@anzararai](https://github.com/anzararai)
-- **LinkedIn**: [Anzar Arai](https://www.linkedin.com/in/anzar-arai-9961022b3/)
+- **GitHub**: [https://github.com/anzararai](https://github.com/anzararai)
 - **Email**: anzarai9503@gmail.com
 
 ---
