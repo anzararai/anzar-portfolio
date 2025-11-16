@@ -85,8 +85,8 @@ export const project = [
         bgImage: '/portfollio.png',
         bgImageDark: '/bgImageDark.png',
         techStack: ['nextjs', 'tailwindcss', 'framer-motion', 'web3forms'],
-        githubLink: 'https://github.com/yourusername/portfolio',
-        liveLink: 'https://yourportfolio.vercel.app'
+        githubLink: 'https://github.com/anzararai/anzar-portfolio',
+        liveLink: 'https://anzar-portfolio.vercel.app/'
     },
     {
         title: 'Smart Todo List App',
