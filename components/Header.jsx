@@ -27,9 +27,9 @@ const Header = () => {
     className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
          <TypeWriter 
         words={[
-            'frontend web',
-            'Next.js',
-            'React.js',
+            'Full-Stack Web',
+            'MERN Stack',
+            'React & Next.js',
         ]}
         typingSpeed={100}      // Typing kitni tez (ms)
         deletingSpeed={50}     // Deleting kitni tez (ms)
@@ -45,7 +45,7 @@ const Header = () => {
         whileInView={{opacity: 1}}
         transition={{duration: 0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        I build clean, responsive, and modern web apps with React and Next.js — simple, fast, and user-focused.
+        I build modern web applications using the MERN stack – React, Next.js, Node.js, and MongoDB. From responsive frontends to robust backends, I create complete solutions that are fast, clean, and user-focused.
         </motion.p>
 
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
@@ -61,7 +61,7 @@ const Header = () => {
             initial={{y: 30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 1.2}}
-            href="/Anzar_Arai_Resume.pdf" download 
+            href="/Resume_Anzar_Arai.pdf" download 
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
                 Download Resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
         </div>

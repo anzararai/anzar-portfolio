@@ -36,6 +36,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import database_icon from '../public/database_icon.svg'
+import database_icon_dark from '../public/database_icon_dark.svg'
 
 export const assets = {
     user_image,
@@ -121,14 +123,14 @@ export const serviceData = [
     { title: 'Frontend Web Development', description: 'I create responsive, modern, and user-friendly websites using HTML, CSS, JavaScript, and React.js.I focus on building clean and interactive UIs that look great on every device' },
     { title: 'Next.js Development', description: 'I build fast, SEO-friendly, and scalable web applications using Next.js.I use features like server-side rendering (SSR), static site generation (SSG), and dynamic routing to improve performance and visibility.'},
     { title: 'API Integration & Data Fetching', description: 'I integrate APIs to fetch and display real-time data in web applications.Using Fetch API and Next.js data-fetching methods, I make dynamic and interactive web pages.'},
-    { title: 'AI-Powered Development', description: 'Leveraging AI tools like ChatGPT, Claude, and GitHub Copilot to write cleaner code, accelerate development, and build intelligent features that enhance user experience.'},
+    { title: 'Backend Development & APIs', description: 'I build robust backends using Node.js, Express.js, and MongoDB. Creating RESTful APIs, handling authentication, managing databases, and ensuring secure, scalable server-side architecture.'},
     { title: 'Deployment & Hosting', description: 'I deploy and host my React and Next.js projects on platforms like Vercel and Netlify.I use Git & GitHub for version control and smooth project management.'},
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Frontend Stack', description: 'React.js, Next.js, Tailwind CSS, JavaScript, HTML CSS' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.E in Computer Engineering' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Learning & Growth', description: 'Exploring Backend Development with Node.js & MongoDB' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Frontend Stack', description: 'React.js, Next.js, JavaScript(ES6+), HTML5, CSS3, Tailwind CSS, Framer Motion' },
+    { icon: database_icon_dark, iconDark: database_icon, title: 'Backend Stack', description: 'Node.js, Express.js, MongoDB, REST APIs, Mongoose' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.E in Computer Engineering' }
 ];
 
 export const toolsData = [
