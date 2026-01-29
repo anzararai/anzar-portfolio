@@ -86,7 +86,7 @@ export const project = [
         description: 'A modern, responsive portfolio website showcasing my work with smooth animations and interactive contact form.',
         bgImage: '/portfollio.png',
         bgImageDark: '/bgImageDark.png',
-        techStack: ['nextjs', 'tailwindcss', 'framer-motion', 'web3forms'],
+        techStack: ['nextjs', 'tailwindcss', 'nodejs', 'expressjs', 'mongoDB', 'framer-motion', 'rest-api'],
         githubLink: 'https://github.com/anzararai/anzar-portfolio',
         liveLink: 'https://anzar-portfolio.vercel.app/'
     },
@@ -95,7 +95,7 @@ export const project = [
         description: 'A feature-rich todo application with local storage persistence, allowing users to manage tasks efficiently.',
         bgImage: '/todo-project.png', 
         bgImageDark: '/todo-project.png',
-        techStack: ['reactjs', 'tailwindcss', 'local-storage', 'hooks'],
+        techStack: ['reactjs', 'tailwindcss', 'local-storage', 'hooks', 'crud'],
         githubLink: 'https://github.com/anzararai/todo-app-react',
         liveLink: 'https://anzararai.github.io/todo-app-react/'
     },
@@ -104,7 +104,7 @@ export const project = [
         description: 'A dynamic weather application that fetches live weather data using API integration with clean UI design.',
         bgImage: '/weather.png',
         bgImageDark: '/weather.png',
-        techStack: ['reactjs', 'weather-api', 'vanilla-css', 'javascript'],
+        techStack: ['reactjs', 'weather-api', 'vanilla-css', 'javascript', 'fetch-api'],
         githubLink: 'https://github.com/anzararai/weather-app',
         liveLink: 'https://weatherappanzar.netlify.app/'
     },

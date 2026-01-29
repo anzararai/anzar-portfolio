@@ -1,86 +1,94 @@
 # 🌐 Portfolio Website – Anzar Arai
 
-A modern and elegant personal portfolio website built using **Next.js**, designed to showcase my skills, projects, and contact information in a clean, responsive, and animated layout.
+Personal portfolio website with a full-stack contact form. Built to showcase my projects and make it easy for people to reach out.
 
-🌐 **Live Demo:** [anzar-portfolio.vercel.app](https://anzar-portfolio.vercel.app)
+**Live:** [anzar-portfolio.vercel.app](https://anzar-portfolio.vercel.app)
 
----
+## What's Inside
 
-## 🚀 Tech Stack
+**Frontend:** Next.js, React, Tailwind CSS, Framer Motion  
+**Backend:** Node.js, Express, MongoDB, Nodemailer
 
-- ⚛️ **Next.js 15** – React framework for optimized performance and routing  
-- 🎨 **Tailwind CSS** – Utility-first styling for modern responsive UI  
-- 🎞️ **Framer Motion** – Smooth animations and motion transitions  
-- 💌 **Web3Forms** – Form submission without a backend  
+The contact form saves messages to MongoDB and sends me an email notification. Pretty straightforward MERN stack implementation.
 
----
-
-## ✨ Features
-
-- 🌙 **Dark & Light Mode Toggle**  
-- 📱 **Fully Responsive Layout (Mobile to Desktop)**  
-- 🌀 **Smooth Text & Section Animations**  
-- 💼 **Project Showcase with Live Links**  
-- 📬 **Working Contact Form (Web3Forms Integration)**  
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-portfolio-website/
-├── app/
-│   ├── layout.js
-│   ├── page.js
-│   └── globals.css
-├── components/
-│   ├── About.jsx
-│   ├── Contact.jsx
-│   ├── Footer.jsx
-│   ├── Header.jsx
-│   ├── Navbar.jsx
-│   ├── Project.jsx
-│   ├── Services.jsx
-│   └── TypeWriter.jsx
-├── assets/
-│   └── assets.js
-├── public/
-├── .env.local
-└── README.md
+portfolio/
+├── frontend/           # Next.js app
+│   ├── components/     # React components
+│   └── app/           # Pages and layouts
+│
+└── backend/           # Express API
+    ├── config/        # DB connection
+    ├── models/        # MongoDB schemas
+    ├── controllers/   # Business logic
+    └── routes/        # API endpoints
 ```
 
----
+## Running Locally
 
-## 🛠️ Setup Instructions
+### Backend Setup
 
 ```bash
-# Install dependencies
+cd backend
 npm install
 
-# Create .env.local file and add:
-NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_key_here
+# Create .env file with:
+# PORT=5000
+# MONGODB_URI=your_mongodb_connection
+# EMAIL_USER=your_gmail
+# EMAIL_PASS=your_gmail_app_password
+# FRONTEND_URL=http://localhost:3000
 
-# Run development server
 npm run dev
 ```
 
-👉 Get your free Web3Forms key from [web3forms.com](https://web3forms.com)
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+
+# Create .env.local with:
+# NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
+
+npm run dev
+```
+
+Frontend: http://localhost:3000  
+Backend: http://localhost:5000
+
+## API Endpoints
+
+```
+POST /api/contact    # Submit contact form
+GET  /api/contact    # View all messages
+```
+
+## Deployment
+
+- Frontend on Vercel (auto-deploys from GitHub)
+- Backend on Render (free tier works fine)
+- Database on MongoDB Atlas (also free)
+
+Don't forget to add environment variables in deployment platforms.
+
+## Quick Notes
+
+For Gmail to work, you need an App Password (not your regular password). Enable 2-Step Verification first, then generate it from Google Account settings.
+
+MongoDB Atlas needs your IP whitelisted. Use `0.0.0.0/0` for development.
+
+## Tech Choices
+
+Went with Next.js because it's fast and handles routing well. MongoDB for the database since it's simple to set up and free to host. Nodemailer handles emails without needing a third-party service.
+
+Tailwind makes styling faster, and Framer Motion adds some nice animations without much code.
 
 ---
 
-## 🚀 Deployment
+Built this as my first full-stack project. Feel free to reach out if you have questions!
 
-Push to GitHub and deploy on [Vercel](https://vercel.com)
-
-Remember to add the environment variable in Vercel project settings.
-
----
-
-## 📬 Contact
-
-- **GitHub**: [https://github.com/anzararai](https://github.com/anzararai)
-- **Email**: anzarai9503@gmail.com
-
----
-
-⭐ **Made with ❤️ using Next.js, Tailwind CSS, and Framer Motion**
+**Contact:** anzarai9503@gmail.com  
+**GitHub:** [github.com/anzararai](https://github.com/anzararai)

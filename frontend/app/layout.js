@@ -12,9 +12,9 @@ const ovo = Ovo({
 
 
 export const metadata = {
-  title: "Anzar Arai - Frontend Developer | React & Next.js",
-  description: "Frontend Developer specializing in React.js, Next.js, and Tailwind CSS. Building modern, responsive web applications. Based in Mumbai, India.",
-  keywords: 'frontend developer, react developer, next.js developer, web developer mumbai, anzar arai',
+  title: "Anzar Arai - Full Stack (MERN) Developer | React, Next.js, Node.js",
+  description: "Full Stack (MERN) Developer specializing in React.js, Next.js, Node.js, Express, and MongoDB. I build scalable, modern, and responsive web applications with clean UI and robust backend APIs.",
+  keywords: 'full stack developer, mern stack developer, react.js developer, next.js developer, node.js developer, express.js developer, full stack web developer, portfolio website',
   authors: [{ name: 'Anzar Arai' }],
 };
 
