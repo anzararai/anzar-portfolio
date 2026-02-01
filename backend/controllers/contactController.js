@@ -1,22 +1,32 @@
 const Contact = require('../models/Contact');
 const nodemailer = require('nodemailer');
 
-// Email setup
+
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',       
+  port: 587,                   
+  secure: false,               
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
+  },
+  tls: {
+    rejectUnauthorized: false   
   }
 });
 
-// Function 1: Contact form submit karna
+transporter.verify(function(error, success) {
+  if (error) {
+    console.log('❌ SMTP connection failed:', error.message);
+  } else {
+    console.log('✅ SMTP server is ready to send emails');
+  }
+});
+
 const createContact = async (req, res) => {
   try {
-    // Step 1: Data lo
     const { name, email, message } = req.body;
 
-    // Step 2: Check karo sab fields bhare hain
     if (!name || !email || !message) {
       return res.status(400).json({
         success: false,
@@ -24,7 +34,6 @@ const createContact = async (req, res) => {
       });
     }
 
-    // Step 3: Database me save karo
     const contact = await Contact.create({
       name,
       email,
@@ -33,7 +42,7 @@ const createContact = async (req, res) => {
 
     console.log('✅ Contact saved:', contact._id);
 
-    // Step 4: Email bhejo (agar fail ho to bhi continue)
+
     try {
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
@@ -51,7 +60,6 @@ const createContact = async (req, res) => {
       console.log('⚠️ Email failed:', emailError.message);
     }
 
-    // Step 5: Success response
     res.status(200).json({
       success: true,
       message: 'Thank you! I will get back to you soon.'
@@ -66,7 +74,6 @@ const createContact = async (req, res) => {
   }
 };
 
-// Function 2: Sab contacts lana
 const getAllContacts = async (req, res) => {
   try {
     const contacts = await Contact.find().sort({ date: -1 });
@@ -86,7 +93,6 @@ const getAllContacts = async (req, res) => {
   }
 };
 
-// Export karo
 module.exports = {
   createContact,
   getAllContacts
