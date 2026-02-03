@@ -36,7 +36,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-5 max-w-2xl font-Ovo '
-                >I'm Anzar Arai, a passionate Full-Stack Developer focused on creating clean, modern, and user-friendly web applications. I specialize in the MERN stack – React.js, Next.js, Node.js, Express.js, and MongoDB – building complete solutions from frontend to backend. I've completed my B.E. in Computer Engineering from Rizvi College of Engineering (University of Mumbai, 2025). Recently completed MERN stack training and building hands-on projects to strengthen my full-stack development skills.</p>
+                >I'm Anzar Arai, a passionate Full-Stack Developer focused on creating clean, modern, and user-friendly web applications. I specialize in the MERN stack – React.js, Next.js, Node.js, Express.js, and MongoDB – building complete solutions from frontend to backend. I've completed my B.E. in Computer Engineering from Rizvi College of Engineering (University of Mumbai, 2025). Built and deployed full-stack MERN applications with real-world features, including REST APIs, database integration, and production deployments.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}

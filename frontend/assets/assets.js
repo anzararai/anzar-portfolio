@@ -120,11 +120,11 @@ export const project = [
 ]
 
 export const serviceData = [
-    { title: 'Frontend Web Development', description: 'I create responsive, modern, and user-friendly websites using HTML, CSS, JavaScript, and React.js.I focus on building clean and interactive UIs that look great on every device' },
-    { title: 'Next.js Development', description: 'I build fast, SEO-friendly, and scalable web applications using Next.js.I use features like server-side rendering (SSR), static site generation (SSG), and dynamic routing to improve performance and visibility.'},
-    { title: 'API Integration & Data Fetching', description: 'I integrate APIs to fetch and display real-time data in web applications.Using Fetch API and Next.js data-fetching methods, I make dynamic and interactive web pages.'},
-    { title: 'Backend Development & APIs', description: 'I build robust backends using Node.js, Express.js, and MongoDB. Creating RESTful APIs, handling authentication, managing databases, and ensuring secure, scalable server-side architecture.'},
-    { title: 'Deployment & Hosting', description: 'I deploy and host my React and Next.js projects on platforms like Vercel and Netlify.I use Git & GitHub for version control and smooth project management.'},
+    { title: 'Frontend Web Development', description: 'I build responsive, modern, and user-friendly interfaces using React.js, HTML, CSS, and JavaScript, focusing on clean UI and cross-device compatibility.' },
+    { title: 'Next.js Development', description: 'I build fast, SEO-friendly web applications using Next.js with SSR, SSG, and dynamic routing to improve performance and visibility.'},
+    { title: 'API Integration & Data Fetching', description: 'I integrate REST APIs to fetch and display real-time data using modern data-fetching techniques in React and Next.js.'},
+    { title: 'Backend Development', description: 'I build scalable backends using Node.js, Express.js, and MongoDB, creating RESTful APIs, handling authentication, and managing secure databases.'},
+    { title: 'Deployment & Hosting', description: 'I deploy and manage full-stack applications using Vercel and Render, with GitHub-based version control and environment-based configuration.'},
 ]
 
 export const infoList = [
